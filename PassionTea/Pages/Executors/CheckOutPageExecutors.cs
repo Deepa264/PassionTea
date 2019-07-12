@@ -11,7 +11,7 @@ namespace PassionTea.Pages.Executors
 {
     class CheckOutPageExecutors : CheckoutPageLocator
     {
-        public void CompleteCheckoutFormAndSubmit(ModelFormCheckOut model)
+        public void CompleteCheckoutFormAndSubmit(ModelFormCheckOutPage model)
         {
             EmailTextBox.SendKeysWithWait(model.EmailID);
             NameTextBox.SendKeysWithWait(model.Name);

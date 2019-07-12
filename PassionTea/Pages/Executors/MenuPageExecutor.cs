@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FluentAssertions;
+//using FluentAssertions;
 
 namespace PassionTea.Pages.Executors
 {
@@ -13,17 +13,20 @@ namespace PassionTea.Pages.Executors
        {
         public void ClickOnGreenTeaButton()
         {
-            GreenTeaCheckOutButton.IsDisplayedAfterWait().Should().Betrue();
-            GreenTeaCheckOutButton.ClickWithWait();
+            // GreenTeaCheckOutButton.IsDisplayedAfterWait().Should().Betrue();
+            GreenTeaCheckOutButton.IsDisplayedAfterWait();
+                GreenTeaCheckOutButton.ClickWithWait();
         }
         public void ClickOnRedTeaButton()
         {
-            RedTeaCheckOutButton.IsDisplayedAfterWait().Should().Betrue();
+            // RedTeaCheckOutButton.IsDisplayedAfterWait().Should().Betrue();
+            RedTeaCheckOutButton.IsDisplayedAfterWait();
             RedTeaCheckOutButton.ClickWithWait();
         }
         public void ClickOnOolongTeaButton()
         {
-            OolangcheckoutButton.IsDisplayedAfterWait().Should().Betrue();
+            // OolangcheckoutButton.IsDisplayedAfterWait().Should().Betrue();
+            OolangcheckoutButton.IsDisplayedAfterWait();
             OolangcheckoutButton.ClickWithWait();
         }
     }

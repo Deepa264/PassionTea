@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PassionTea.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PassionTea.Objects
 {
-    class ModelFormCheckOut
+    class ModelFormCheckOutPage
     {
         public string EmailID { get; set; }
         public String Name { get; set; }

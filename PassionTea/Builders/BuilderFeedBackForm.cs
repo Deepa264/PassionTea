@@ -15,10 +15,11 @@ namespace PassionTea.Builders
             var fullName = Faker.Name.FullName();
             var model = new ModelFormFeedBackPage();
             {
-             EmailID = Faker.Internet.Email.(fullName),
-            Name = FullName,
-            Subject = Faker.Lorem.Sentence(),
-            Message = Faker.Lorem.Paregraph(),
+
+                model.EmailID = Faker.Internet.Email(fullName);
+                model.Name = fullName;
+                model.Subject = Faker.Lorem.Sentence();
+                model.Message = Faker.Lorem.Paragraph();
 
             };
             return model;

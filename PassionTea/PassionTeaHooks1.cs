@@ -25,18 +25,20 @@ namespace PassionTea
         {
             SeleniumExecutors.Driver().Close();
         }
+        /*
         [AfterStep]
-        public static void AfterStep()
+        public  void AfterStep()
         {
             if(ScenarioContext.Current.TestError!=null)
             {
                 var featureTitle = TestRunnerManager.GetTestRunner();
                 FeatureContext.FeatureInfo.Title;
+                // FeatureContext.FeatureInfo.Title;
                 var scenarioTitle = TestRunnerManager.GetTestRunner().ScenarioContext.ScenarioInfo.Title;
                 var fileName= @"{featureTitle}--{scenarioTitle}";
-                SeleniumExecutors.ITakesScreenshot(fileName)
+                SeleniumExecutors.ITakesScreenshot(fileName);
                     }
         }
-
+        */
     }
 }

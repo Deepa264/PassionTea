@@ -24,6 +24,6 @@ namespace PassionTea.Pages.Locators
 
         public By PlaceOrderButton => By.ClassName("btn btn-primary");
 
-       public By ConfirmationPageHeader => By.XPath($"//h1[text()='{MessageConstant.CheckOutConfirmationPageHeaderText}']");
+       public By ConfirmationPageHeader => By.XPath($"//h1[text()='{ConstantValues.CheckOutConfirmationPageHeaderText}']");
     }
 }

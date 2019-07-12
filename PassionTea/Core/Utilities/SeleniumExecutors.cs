@@ -35,7 +35,7 @@ namespace PassionTea.Core.Utilities
         public static WebDriverWait GetWaitDriver(int timeout=0)
         {
             var waitTimeout=timeout==0?int.Parse(ConfigurationManager.AppSettings["waitTimeOut"]):timeout;
-            return new WebDriverWait(Driver(), TimeSpan.FromSeconds(waitTimeout));
+            return new WebDriverWait(Driver(),TimeSpan.FromSeconds(waitTimeout));
         }
             
         public static void ITakesScreenshot(String fileName)
