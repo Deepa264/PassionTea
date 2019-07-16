@@ -1,6 +1,4 @@
-﻿using EnumsNET;
-using PassionTea.Enum;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,11 +6,11 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PassionTea.Utilities
+namespace PassionCore.Utilities
 {
-    static class EnumHelper
+    public static class EnumHelper
     {
-        public static String GetnumDescription(CardType value)
+        public static String GetnumDescription(Enum value)
         {
         var fieldInfo = value.GetType().GetField(value.ToString());
         DescriptionAttribute[] attributes = (DescriptionAttribute[])fieldInfo.GetCustomAttributes(typeof(DescriptionAttribute), false);

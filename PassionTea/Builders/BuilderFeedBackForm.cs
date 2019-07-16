@@ -13,13 +13,13 @@ namespace PassionTea.Builders
         public static ModelFormFeedBackPage BuildFeedbackDetails()
         {
             var fullName = Faker.Name.FullName();
-            var model = new ModelFormFeedBackPage();
+            var model = new ModelFormFeedBackPage()
             {
 
-                model.EmailID = Faker.Internet.Email(fullName);
-                model.Name = fullName;
-                model.Subject = Faker.Lorem.Sentence();
-                model.Message = Faker.Lorem.Paragraph();
+                EmailID = Faker.Internet.Email(fullName),
+                Name = fullName,
+                Subject = Faker.Lorem.Sentence(),
+                Message = Faker.Lorem.Paragraph(),
 
             };
             return model;

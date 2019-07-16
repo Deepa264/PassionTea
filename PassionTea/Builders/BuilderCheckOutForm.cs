@@ -1,14 +1,14 @@
 ﻿using Bogus;
+using PassionCore.Utilities;
 using PassionTea.Enum;
-
 using PassionTea.Objects;
-using PassionTea.Utilities;
+
 
 namespace PassionTea.Builders
 {
     class BuilderCheckOutForm 
     {
-        public  ModelFormCheckOutPage BuildCheckOutDetails(CardType cardType)
+        public static ModelFormCheckOutPage BuildCheckOutDetails(CardType cardType)
         {
             var fullName = Faker.Name.FullName();
            //var cardType = CardType;

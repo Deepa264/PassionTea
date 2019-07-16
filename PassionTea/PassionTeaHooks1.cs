@@ -1,5 +1,4 @@
-﻿using PassionTea.Core.Utilities;
-using PassionTea.Utilities;
+﻿using PassionCore.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

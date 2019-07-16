@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace PassionTea.Tests
+namespace PassionTea.Tests.Features
 {
     using TechTalk.SpecFlow;
     

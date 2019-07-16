@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using PassionTea.Core.Utilities;
-using PassionTea.Utilities;
+using PassionCore.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace PassionTea.Core
 {
-    static class ElementLocatorExtensions
+    public static class ElementLocatorExtensions
     {
         public static IWebElement GetElement(this By elementLocator,IWebElement ParentElement=null)
         {

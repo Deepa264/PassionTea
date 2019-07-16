@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PassionTea.Utilities
+namespace PassionTeaCore.Utilities
 {
-   static class FileHelper
+   public static class FileHelper
     {
         public static String GetScreenShotPath()
         {

@@ -7,10 +7,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PassionTea.Utilities;
 using Microsoft.VisualBasic;
 
-namespace PassionTea.Core.Utilities
+namespace PassionCore.Utilities
 {
     public static class SeleniumExecutors
     {
@@ -34,8 +33,9 @@ namespace PassionTea.Core.Utilities
         }
         public static WebDriverWait GetWaitDriver(int timeout=0)
         {
-            var waitTimeout=timeout==0?int.Parse(ConfigurationManager.AppSettings["waitTimeOut"]):timeout;
-            return new WebDriverWait(Driver(),TimeSpan.FromSeconds(waitTimeout));
+            var waitTimeOut = timeout == 0 ? int.Parse(ConfigurationManager.AppSettings["waitTimeOut"]) : timeout;
+               
+                     return new WebDriverWait(Driver(),TimeSpan.FromSeconds(waitTimeOut));
         }
             
         public static void ITakesScreenshot(String fileName)

@@ -1,5 +1,4 @@
-﻿using PassionTea.Core;
-using PassionTea.Objects;
+﻿using PassionTea.Objects;
 using PassionTea.Pages.Locators;
 using System;
 using System.Collections.Generic;

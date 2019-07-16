@@ -1,9 +1,9 @@
 ﻿using NUnit.Framework;
+using PassionCore.Utilities;
 using PassionTea.Builders;
 using PassionTea.Core;
 using PassionTea.Enum;
 using PassionTea.Pages.Executors;
-using PassionTea.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
